@@ -7,7 +7,7 @@ buttonEl.innerHTML = 'log in';
 console.log(buttonEl.nodeName, buttonEl.cloneNode(true));
 
 
-const authenticationHandler = () => {
+const _ = () => {
   const username = prompt('enter your user name');
   if (username === null) {
     return;
@@ -24,9 +24,9 @@ buttonEl.addEventListener('hover', authenticationHandler);
 
 
 // "hover" over the button once
-const clickEvent1 = new Event('hover');
+const clickEvent1 = new Event(_);
 buttonEl.dispatchEvent(clickEvent1);
 
 // "hover" over the button again
-const clickEvent2 = new Event('hover');
+const clickEvent2 = new Event(_);
 buttonEl.dispatchEvent(clickEvent2);

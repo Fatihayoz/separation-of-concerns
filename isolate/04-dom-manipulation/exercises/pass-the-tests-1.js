@@ -9,27 +9,12 @@ divEl.innerHTML = `
 console.log(divEl.nodeName + ' (before)', divEl.cloneNode(true));
 
 // --- write some code ---
-
 //  replace the <p>
-const pEl = document.createElement('p');
-divEl.appendChild(pEl);
-console.log(divEl);
-/*
-// clones the first child and appends to the end
-divEl.appendChild(divEl.children[0].cloneNode(true)); 
-console.log(divEl);
-*/
 //  insert something before the <section>
-const h2El = document.createElement('h2');
-divEl.insertBefore(h2El, divEl.children[1]);
-console.log(divEl);
 //  remove the <h1>
-divEl.removeChild(divEl.children[3]);
-console.log(divEl);
 //  append something to the end
-const navEl = document.createElement('nav');
-divEl.replaceChild(navEl, divEl.children[0]);
-console.log(divEl);
+
+
 
 // --- --- --- --- --- ---
 
