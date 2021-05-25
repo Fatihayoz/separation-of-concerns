@@ -41,6 +41,3 @@ console.log(aEl);
 
 const imgEl = document.createElement('img'); // returns <img>
 console.log(imgEl);
-
-// test
-
