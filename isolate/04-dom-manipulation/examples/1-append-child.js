@@ -19,6 +19,13 @@ divEl.appendChild(pEl);
 
 console.log(divEl.nodeName, divEl.cloneNode(true));
 
+/*
+DIV <div>
+      <h1>Welcome!</h1>
+      <p>to HYF Be.</p>
+    </div>
+*/
+
 console.assert(divEl.children[0].nodeName === 'H1', 'Test 1st child: .nodeName');
 console.assert(divEl.children[0].innerHTML === 'Welcome!', 'Test 1st child: .innerHTML');
 

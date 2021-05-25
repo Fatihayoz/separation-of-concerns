@@ -15,6 +15,12 @@ const divEl = document.createElement('div');
 divEl.appendChild(pEl);
 
 console.log(divEl.nodeName, divEl.cloneNode(true));
+/*
+DIV <div>
+      <p>to HYF Be.</p>
+    </div>
+*/
+
 console.assert(divEl.children[0].nodeName === 'P', 'Test: before inserting');
 
 
@@ -28,4 +34,10 @@ headerEl.innerHTML = 'Welcome!';
 divEl.insertBefore(headerEl, pEl);
 
 console.log(divEl.nodeName, divEl.cloneNode(true));
+/*
+DIV <div>
+      <h1>Welcome!</h1>
+      <p>to HYF Be.</p>
+    </div>
+*/
 console.assert(divEl.children[0].nodeName === 'H1', 'Test: after inserting');
