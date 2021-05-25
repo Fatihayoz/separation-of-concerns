@@ -20,7 +20,15 @@ console.log(divEl.nodeName, divEl.cloneNode(true));
 // --- write some code ---
 //  you will need to access and update each <td> element
 
-
+const newTd = ['a', 'b', 'c', 'd'];
+for (let i = 0; i < 2; i++) {
+  for (let j = 0; j < 2; j++) {
+    let tbodyEL = divEl.children[0].children[0];
+    let trEl = tbodyEL.children[i];
+    let tdEl = trEl.children[j];
+    tdEl.innerHTML = newTd.shift();
+  }
+}
 
 
 // --- --- --- --- --- ---

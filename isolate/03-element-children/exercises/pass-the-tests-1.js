@@ -9,9 +9,21 @@ ulEl.innerHTML = `
 console.log(ulEl.nodeName, ulEl.cloneNode(true));
 
 // --- write some code ---
+/*
+const toadLi = ulEl.children[0];
+toadLi.innerHTML = 'toad';
 
+const frogLi = ulEl.children[1];
+frogLi.innerHTML = 'frog';
 
+const saladLi = ulEl.children[2];
+saladLi.innerHTML = 'salamander';
+*/
 
+let newLi = ['toad', 'frog', 'salamander'];
+for(let i = 0; i < newLi.length; i++) {
+  ulEl.children[i].innerHTML = newLi[i];
+}
 
 // --- --- --- --- --- ---
 
