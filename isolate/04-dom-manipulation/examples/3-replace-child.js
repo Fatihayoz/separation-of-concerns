@@ -15,11 +15,6 @@ const divEl = document.createElement('div');
 divEl.appendChild(headerEl);
 
 console.log(divEl.nodeName, divEl.cloneNode(true));
-/*
-DIV <div>
-      <h1>Welcome!</h1>
-    </div>
-*/
 console.assert(divEl.children[0].nodeName === 'H1', 'Test: before replacing');
 
 
@@ -33,9 +28,4 @@ pEl.innerHTML = 'to HYF Be.';
 divEl.replaceChild(pEl, headerEl);
 
 console.log(divEl.nodeName, divEl.cloneNode(true));
-/*
-DIV <div>
-      <p>to HYF Be.</p>
-    </div>
-*/
 console.assert(divEl.children[0].nodeName === 'P', 'Test: after replacing');

@@ -9,22 +9,7 @@ console.log(buttonEl.nodeName, buttonEl.cloneNode(true));
 
 const truthTestHandler = () => {
   // ask a user to confirm if they are honest
-  const userAnswer = prompt (`
-  Are you an honest person?
-
-  OK: Yes, I'm
-  Cancel: Not really
-  `);
   // let them know what you think of their answer
-  if (userAnswer === null) {
-    alert (`
-    Then, it's time to change.
-
-    Be an honest person nowon.
-    `);
-  } else {
-    alert (`Good of you!`);
-  }
 
 };
 

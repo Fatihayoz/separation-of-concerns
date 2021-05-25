@@ -11,26 +11,26 @@
 // you can create an element with lower or upper case letters
 const divEl = document.createElement('Div');
 // but the .nodeName will be in all capitals
-console.log(divEl.nodeName, divEl);     // returns DIV <div></div>  
+console.log(divEl.nodeName, divEl);
 
 // you can't modify the .nodeName property of an element
 try {
   divEl.nodeName = '!potato!';
-} catch (err) {                     // TypeError
+} catch (err) {
   console.log(err);
 }
 
 const pEl = document.createElement('P');
-console.log(pEl.nodeName, pEl); // P <p></p>
+console.log(pEl.nodeName, pEl); // DIV
 
 const buttonEl = document.createElement('bUTTOn');
-console.log(buttonEl.nodeName, buttonEl); // BUTTON <button></button>
+console.log(buttonEl.nodeName, buttonEl); // BUTTON
 
 const liEl = document.createElement('LI');
-console.log(liEl.nodeName, liEl); // LI <li></li>
+console.log(liEl.nodeName, liEl); // LI
 
 const sectionEl = document.createElement('SeCtIoN');
-console.log(sectionEl.nodeName, sectionEl); // SECTION <section></section>
+console.log(sectionEl.nodeName, sectionEl); // SECTION
 
 const inputEl = document.createElement('InpuT');
-console.log(inputEl.nodeName, inputEl); // INPUT <input></input>
+console.log(inputEl.nodeName, inputEl); // INPUT
