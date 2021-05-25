@@ -8,15 +8,29 @@ divEl.innerHTML = '<h1>hello</h1>';
 divEl.innerHTML += '<h2>goodbye</h2>';
 divEl.innerHTML += '<h3>...</h3>';
 console.log(divEl.nodeName, divEl.cloneNode(true));
-console.log('.childElementCount', divEl.childElementCount);
+/*
+DIV <div>
+      <h1>hello</h1>
+      <h2>goodbye</h2>
+      <h3>...</h3>
+    </div>
+*/
+console.log('.childElementCount', divEl.childElementCount); // .childElementCount 3
 
 // update each child using a for loop
 const childrenArray = Array.from(divEl.children);
-childrenArray.forEach(child => {
+childrenArray.forEach(child => {    // for ... of
   // children are updated by reference
   child.innerHTML += '!';
 });
 
 // the changes are visible in the parent
 console.log(divEl.nodeName, divEl.cloneNode(true));
-console.log('.childElementCount', divEl.childElementCount);
+/*
+DIV <div>
+      <h1>hello!</h1>
+      <h2>goodbye!</h2>
+      <h3>...!</h3>
+    </div>
+*/
+console.log('.childElementCount', divEl.childElementCount); // .childElementCount 3

@@ -1,6 +1,10 @@
 'use strict';
 
+const element = document.createElement('p');
+element.innerHTML = 'lorem ipsum dolor';
+element.className = 'fancy-text';
 
+console.log(element.innerHTML, element.className);
 
 
 // the assertions are correct!  write code above to pass them
