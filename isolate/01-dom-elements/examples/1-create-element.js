@@ -11,22 +11,22 @@
 
 */
 
-const divEl = document.createElement('div'); // returns <div></div>
+const divEl = document.createElement('div');
 console.log(divEl);
 
-const pEl = document.createElement('p'); // returns <p></p>
+const pEl = document.createElement('p');
 console.log(pEl);
 
-const buttonEl = document.createElement('button'); // // returns <button></button>
+const buttonEl = document.createElement('button');
 console.log(buttonEl);
 
-const liEl = document.createElement('li'); // returns <li></li>
+const liEl = document.createElement('li');
 console.log(liEl);
 
-const sectionEl = document.createElement('section'); // returns <section></section>
+const sectionEl = document.createElement('section');
 console.log(sectionEl);
 
-const inputEl = document.createElement('input'); // returns <input>
+const inputEl = document.createElement('input');
 console.log(inputEl);
 
 
@@ -41,3 +41,4 @@ console.log(aEl);
 
 const imgEl = document.createElement('img'); // returns <img>
 console.log(imgEl);
+

@@ -8,14 +8,7 @@ divEl.innerHTML = '<h1>hello</h1>';
 divEl.innerHTML += '<h2>goodbye</h2>';
 divEl.innerHTML += '<h3>...</h3>';
 console.log(divEl.nodeName, divEl.cloneNode(true));
-/*
-DIV <div>
-      <h1>hello</h1>
-      <h2>goodbye</h2>
-      <h3>...</h3>
-    </div>
-*/
-console.log('.childElementCount', divEl.childElementCount); // .childElementCount 3
+console.log('.childElementCount', divEl.childElementCount);
 
 // update each child using a for loop
 for (const child of divEl.children) {
@@ -24,11 +17,4 @@ for (const child of divEl.children) {
 
 // the changes are visible in the parent
 console.log(divEl.nodeName, divEl.cloneNode(true));
-/*
-DIV <div>
-      <h1>hello!</h1>
-      <h2>goodbye!</h2>
-      <h3>...!</h3>
-    </div>
-*/
-console.log('.childElementCount', divEl.childElementCount); // .childElementCount 3
+console.log('.childElementCount', divEl.childElementCount);

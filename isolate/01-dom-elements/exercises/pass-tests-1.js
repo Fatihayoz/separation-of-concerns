@@ -1,8 +1,6 @@
 'use strict';
 
-const element = document.createElement('input');
-element.placeholder = 'enter your username';
-element.className = 'auth-field';
+
 
 
 // the assertions are correct!  write code above to pass them
