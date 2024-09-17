@@ -28,3 +28,17 @@ console.log(sectionEl);
 
 const inputEl = document.createElement('input');
 console.log(inputEl);
+
+
+const ulEl = document.createElement('ul'); // returns <ul></ul>
+console.log(ulEl);
+
+const h1El = document.createElement('h1'); // returns <h1></h1>
+console.log(h1El);
+
+const aEl = document.createElement('a'); // returns <a></a>
+console.log(aEl);
+
+const imgEl = document.createElement('img'); // returns <img>
+console.log(imgEl);
+
